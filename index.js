@@ -25,6 +25,10 @@ const homeTeam = final2014[0]['Home Team Name'];
 
 console.log(homeTeam);
 
+const awayTeam = final2014[0]['Away Team Name'];
+
+console.log(awayTeam);
+
 /* Task 2: Create a function called  getFinals that takes `data` as an argument and returns an array of objects with only finals data */
 
 function getFinals(/* code here */) {
