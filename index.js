@@ -80,7 +80,7 @@ function getWinners(func) {
     
 };
 
-// console.log(getWinners(getFinals(fifaData)));
+console.log(getWinners(getFinals(fifaData)));
 
 /* Task 6: Implement a higher-order function called `getWinnersByYear` that accepts the following parameters and returns a set of strings "In {year}, {country} won the world cup!" 
 
@@ -90,16 +90,14 @@ Parameters:
  */
 
 function getWinnersByYear(func1, func2) {
-  let winningCountry = [];
-    for (let i = 0; i < func1.length; i++) {
+  let str = "";
+    for (let i = 0; i < finals.length; i++) {
       if (func1[i] === "home") {
-        winningCountry.push(finals[i]['Home Team Name']);
+        str += `In ${func2[i]}, ${finals[i]["Home Team Name"]} won the world cup!\n`;
       } else {
-        winningCountry.push(finals[i]['Away Team Name']);
-      }
-    } for (let i = 0; i < finals.length; i++) {
-      
-    }
+        str += `In ${func2[i]}, ${finals[i]["Away Team Name"]} won the world cup!\n`;
+    } 
+    } return str;
 };
 
 console.log(getWinnersByYear(getWinners(finals), getYears(finals)));
