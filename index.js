@@ -121,22 +121,28 @@ Hint: Investigate your data to find "team initials"!
 Hint: use `.reduce` */
 
 // function getCountryWins(data, teamInitials) {
-//   let wins = 0;
-//     for
-//     if (teamInitals === data['Home Team Initals'] && data["Home Team Goals"] > data["Away Team Goals"]) {
-//       wins += 1;
+//   let numWins = 0;
+//   for (let i = 0; i < data.length; i++) {
+//     if (teamInitials === data[i]["Home Team Intials"] && data[i]["Home Team Goals"] > data[i]["Away Team Goals"]) {
+//       numWins ++;
+//     } else if (teamInitials === data[i]["Away Team Intials"] && data[i]["Away Team Goals"] > data[i]["Home Team Goals"]) {
+//       numWins ++;
+//     } else {
+//       numWins;
 //     }
+//   } return numWins;
+// }
 
-// };
+// console.log(getCountryWins(fifaData, "FRA"));
 
-// getCountryWins();
+fifaData.reduce(())
 
 
 /* Stretch 3: Write a function called getGoals() that accepts a parameter `data` and returns the team with the most goals score per appearance (average goals for) in the World Cup finals */
 
-function getGoals(/* code here */) {
+function getGoals(data) {
 
-    /* code here */
+  
 
 };
 
